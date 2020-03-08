@@ -11,8 +11,11 @@ Exude API uses the in-house Exude library for the filtering of the data Exude-li
 * Get swear words from given text/file/link
 
 ## OpenAPI-URL
+
 Open API JSON: http://uttesh.com/exude-api/exude-service-open-api.json
+
 Open API YML: http://uttesh.com/exude-api/exude-service-open-api.yml
+
 Heruko Spec URL : https://exude-api.herokuapp.com/swagger-ui/index.html?url=/v3/api-docs
 
 ## How to Use
