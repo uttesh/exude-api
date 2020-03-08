@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  description: Excude API Service
+  termsOfService: http://uttesh.com/apis/terms/
+  title: Exude API Service
+  version: 1.0.0
+servers:
+- url: http://uttesh.com/apis
+
+paths:
+  /exude/{type}/data:
+    post:
+      summary: Filter the stopping words from the provided input data or links
+      operationId: filterStoppings
+      tags:
+        - exude
+      parameters:
+        - name: type
+          description: provide the type of filtering required stopping/swear
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Filter the stopping words from the provided input data or links
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ExudeBean'
+
+      responses:
+        '200':
+          description: Exude response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExudeResponseBean'
+
+  /exude/{type}/file:
+    post:
+      summary: Filter the stopping words from the provided input file
+      operationId: filterFileDataStoppings
+      tags:
+        - exude
+      parameters:
+        - name: type
+          description: provide the type of filtering required stopping/swear
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Filter the stopping words from the provided input file
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: model response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExudeResponseBean'
+                
+components:
+  schemas:
+    ExudeBean:
+        properties:
+            data:
+                type: string
+            links:
+                type: array
+                items:
+                  type: string
+    ExudeResponseBean:
+        properties:
+            data:
+                type: string
