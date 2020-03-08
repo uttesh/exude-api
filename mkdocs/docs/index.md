@@ -2,10 +2,10 @@
 
 !!! Version ""
     The latest version is: 1.0.0
-    
+
     Open Source The Apache License.
 
-Exude API is Open source project and it is used for the primary ways for removing/filtering the stopping,stemming words from the text data, this API is in a very basic level of development need to work on for later changes.
+Exude API is an Open Source project, It is used for the primary ways for filtering the stopping, stemming words from the text data. This API is in a very basic level of development need to work on for later changes.
 
 
 ## Features
@@ -16,12 +16,12 @@ Exude API is Open source project and it is used for the primary ways for removin
 
 ## Stopping and Porter stemming algorithm
 
-Stop words are words which are filtered out before or after processing of natural language data, Though "stop words" usually refers to the most common words in a language i.e this, that ,what,where...etc 
+Stop words are words that are filtered out before or after processing of natural language data, Though "stop words" usually refers to the most common words in a language i.e this, that, what, where...etc 
 
 The Porter stemming algorithm (or 'Porter stemmer') is a process for removing the commoner morphological and inflexional endings from words in English. 
-Its main use is as part of a term normalisation process that is usually done when setting up Information Retrieval systems.
+Its main use is as part of a term normalization process that is usually done when setting up Information Retrieval systems.
 
-Terms with a common stem will usually hava similar meanings, for example:
+Terms with a common stem will usually have similar meanings, for example:
 
 ```
 REPORT
