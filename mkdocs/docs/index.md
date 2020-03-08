@@ -2,8 +2,10 @@
 
 !!! Version ""
     The latest version is: 1.0.0
+    
+    Open Source The Apache License.
 
-Exude API is the primary ways for removing/filtering the stopping,stemming words from the text data, this API is in a very basic level of development need to work on for later changes.
+Exude API is Open source project and it is used for the primary ways for removing/filtering the stopping,stemming words from the text data, this API is in a very basic level of development need to work on for later changes.
 
 
 ## Features
