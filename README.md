@@ -24,8 +24,11 @@ Either use the Heruko url or deploy locally by using the docker to hit the API, 
 API see exude-api doc: <a href="http://uttesh.com/exude-api/api-explorer/" target="_blank"> Documentation </a>
 
 Postman execution sample:
+
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="http://uttesh.com/exude-api/img/logo.png">
     <source src="http://uttesh.com/exude-api/exude-api-postman-sample-vieo.webm" type="video/webm">
   </video>
 </figure>
+
+
