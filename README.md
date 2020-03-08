@@ -4,6 +4,7 @@ Exude API is an Open Source project, It is used for the primary ways for filteri
 
 Exude API uses the in-house Exude library for the filtering of the data Exude-library <a href="https://github.com/uttesh/exude" target="_blank">Repository</a>
 
+Demo: https://exude.herokuapp.com/ (its the sample server)
 ## Features
 
 * Filter stopping words from given text/file/link.
