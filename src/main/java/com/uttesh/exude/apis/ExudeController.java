@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -28,6 +29,7 @@ import com.uttesh.exude.service.ExudeService;
  *  Exude API end point class to filter the provided input data
  */
 @RestController
+@RequestMapping("/exude")
 public class ExudeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(ExudeController.class);
@@ -41,7 +43,7 @@ public class ExudeController {
 	 * @param exudeBean
 	 * @return filter stopping/swear words
 	 */
-	@PostMapping("/exude/{type}/data")
+	@PostMapping("/{type}/data")
 	public ResponseEntity<?> exudeData(@PathVariable("type") String type, @RequestBody ExudeBean exudeBean) {
 		ExudeResponseBean exudeResponseBean = new ExudeResponseBean();
 		try {
@@ -59,9 +61,9 @@ public class ExudeController {
 	 * @param exudeBean
 	 * @return filter stopping/swear words
 	 */
-	@PostMapping("/exude/{type}/file")
+	@PostMapping("/{type}/file")
 	@Consumes({"multipart/form-data", "multipart/mixed"})
-	public ResponseEntity<?> createModel(@PathVariable("type") String type, @RequestPart("file") MultipartFile uploadFile) {
+	public ResponseEntity<?> exudeFileData(@PathVariable("type") String type, @RequestPart("file") MultipartFile uploadFile) {
 		ExudeResponseBean exudeResponseBean = new ExudeResponseBean();
 		try {
 			logger.info("file name:: {}", uploadFile.getOriginalFilename());
