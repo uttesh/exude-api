@@ -8,7 +8,7 @@
   },
   "servers": [
     {
-      "url": "http://uttesh.com/apis"
+      "url": "https://exude-api.herokuapp.com"
     }
   ],
   "paths": {

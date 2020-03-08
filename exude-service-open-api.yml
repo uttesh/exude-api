@@ -5,7 +5,7 @@ info:
   title: Exude API Service
   version: 1.0.0
 servers:
-- url: http://uttesh.com/apis
+- url: https://exude-api.herokuapp.com/
 
 paths:
   /exude/{type}/data:
