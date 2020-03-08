@@ -1,0 +1,17 @@
+site_name: Exude API
+theme: 
+  name: 'material'
+  logo: 'img/logo.png'
+  favicon: 'img/favicon.ico'
+site_description: Exude API provide the service to filter the stopping,swear words on the provided file,data and link and it uses the in house exude jar to filter the data
+markdown_extensions:
+  - admonition
+site_author: Uttesh Kumar T.H.
+copyright: Copyright (c) 2016-2020 Uttesh Kumar T.H.
+
+
+nav:
+    - Overview: 'index.md'
+    - 'API Explorer': 'api-explorer.md'
+    - 'API Server': 'api-server.md'
+    - 'Source Code,bugs': 'developer-guide.md'

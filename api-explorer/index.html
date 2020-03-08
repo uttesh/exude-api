@@ -256,13 +256,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    Samples
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -527,13 +520,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    Samples
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -717,13 +703,11 @@
                 
                 
                 <h1 id="exude-api">Exude API</h1>
-<blockquote>
+<div class="admonition info">
 <p>Version: 1.0.0</p>
-<blockquote>
 <p><a href="https://exude-api.herokuapp.com/swagger-ui/index.html?url=/v3/api-docs" target="_blank">Open API Swagger Spec</a></p>
 <p>Terms of service <a href="http://uttesh.com/apis/terms/ " target="_blank">Terms</a></p>
-</blockquote>
-</blockquote>
+</div>
 <h3 id="exudestoppingdata">/exude/stopping/data</h3>
 <h4 id="post">POST</h4>
 <h5 id="summary">Summary</h5>
@@ -750,15 +734,15 @@
 </tbody>
 </table>
 <h5 id="request-body">Request Body</h5>
+<div class="admonition exude request bean">
 <p>Pass the ExudeRequestBean Object, pass either text data or data links</p>
-<pre><code>{
-  &quot;data&quot;: &quot;string&quot;,
-  &quot;links&quot;: [
-    &quot;string&quot;
-  ]
-}
-</code></pre>
-
+<p><code>{
+    "data": "string",
+    "links": [
+      "string"
+    ]
+  }</code></p>
+</div>
 <h5 id="responses">Responses</h5>
 <table>
 <thead>
@@ -774,19 +758,21 @@
 </tr>
 </tbody>
 </table>
-<h5 id="samples">Samples</h5>
+<div class="admonition sample">
+<p class="admonition-title">Sample</p>
 <p>RequestBody:
-  <code>{
-    "links":[
-        "https://en.wikipedia.org/wiki/Rama"
-        ]
-   }</code></p>
+<code>{
+"links":[
+  "https://en.wikipedia.org/wiki/Rama"
+  ]
+}</code></p>
 <p>ResponseBody:
-  <code>{
-    "data": {
-        "https://en.wikipedia.org/wiki/Rama": "ramakien 516832 half tdr upload latina idol sivananda  kathakali ....
-    }
-   }</code></p>
+<code>{
+  "data": {
+      "https://en.wikipedia.org/wiki/Rama": "ramakien 516832 half tdr upload latina idol sivananda  kathakali ....
+  }
+}</code></p>
+</div>
 <h3 id="exudesweardata">/exude/swear/data</h3>
 <h4 id="post_1">POST</h4>
 <h5 id="summary_1">Summary</h5>
