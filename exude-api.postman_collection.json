@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "21fe5046-4636-4bf9-afa8-d8e4dde81840",
+		"name": "exude-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EXUDE API stopping data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"links\":[\n\t\t\"https://www.altnews.in/coronavirus-screenshots-from-aaj-taks-fact-check-shared-with-misleading-claim/\"\n\t\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/exude/stopping/data",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exude",
+						"stopping",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXUDE API swearing data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"links\":[\n\t\t\"https://www.altnews.in/coronavirus-screenshots-from-aaj-taks-fact-check-shared-with-misleading-claim/\"\n\t\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/exude/swear/data",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exude",
+						"swear",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXUDE API file data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "application/octet-stream",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/exude/stopping/file",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exude",
+						"stopping",
+						"file"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
