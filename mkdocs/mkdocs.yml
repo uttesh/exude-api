@@ -8,8 +8,21 @@ markdown_extensions:
   - admonition
 site_author: Uttesh Kumar T.H.
 copyright: Copyright (c) 2016-2020 Uttesh Kumar T.H.
+google_analytics:
+  - 'UA-37592456-1'
+  - 'auto'
 
-
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/uttesh'
+    - type: 'twitter'
+      link: 'https://twitter.com/uttesh'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/uttesh'
+      
 nav:
     - Overview: 'index.md'
     - 'API Explorer': 'api-explorer.md'
