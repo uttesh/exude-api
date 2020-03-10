@@ -1,4 +1,4 @@
-# <img src="img/logo.png" alt="drawing" width="80"/> Exude API
+# <img src="img/logo.png" alt="drawing" width="80"/> Exude API <sup style="color:red">beta</sup>
 
 !!! Version ""
     The latest version is: 1.0.0
