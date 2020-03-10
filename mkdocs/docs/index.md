@@ -51,6 +51,19 @@ exude process sequence flow:
 ![Exude API Process Flow](img/exude_filtering_flow.png "Title")
 
 ## Demo
-Please checkout the demo portal to test Exude API.
 
-<a href="https://exude.herokuapp.com/" target="_blank">Exude API Demo!</a>
+1. POSTMAN collection json file
+    Use postman collection to test the API, its currently using the heroku endpoints.
+    <a href="https://raw.githubusercontent.com/uttesh/exude-api/gh-pages/exude-api.postman_collection.json" target="_blank">Exude API Postman collection!</a>
+2.  Using the Docker. <a href="https://hub.docker.com/r/uttesh/exude-api" target="_blank">Docker image link</a>
+   
+    ```
+    docker pull uttesh/exude-api
+    ```
+
+3. Sample video  ![](exude_api.webm)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KDZ4BEfoGo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+4. Simple demo portal to test Exude API (Its Beta version, need tp update to latest).
+   <a href="https://exude.herokuapp.com/" target="_blank">Exude API Demo!</a>
+

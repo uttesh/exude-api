@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "EXUDE API stopping data",
+			"name": "EXUDE API stopping link data",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"links\":[\n\t\t\"https://www.altnews.in/coronavirus-screenshots-from-aaj-taks-fact-check-shared-with-misleading-claim/\"\n\t\t]\n}",
+					"raw": "{\n\t\"links\":[\n\t\t\"https://en.wikipedia.org/wiki/Rama\"\n\t\t]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -27,15 +27,95 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/exude/stopping/data",
+					"raw": "https://exude-api.herokuapp.com/exude/stopping/data",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"exude-api",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"exude",
 						"stopping",
 						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXUDE API stopping text data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\":\"Kannada is a Southern Dravidian language, and according to scholar Sanford B. Steever, its history can be conventionally divided into three periods: Old Kannada (Halegannada) from 450–1200 CE, Middle Kannada (Nadugannada) from 1200–1700, and Modern Kannada from 1700 to the present.[23] Kannada is influenced to an appreciable extent by Sanskrit. Influences of other languages such as Prakrit and Pali can also be found in the Kannada language. The scholar Iravatham Mahadevan indicated that Kannada was already a language of rich oral tradition earlier than the 3rd century BCE, and based on the native Kannada words found in Prakrit inscriptions of that period, Kannada must have been spoken by a widespread and stable population.[24][25] The scholar K. V. Narayana claims that many tribal languages which are now designated as Kannada dialects could be nearer to the earlier form of the language, with lesser influence from other languages.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://exude-api.herokuapp.com/exude/stopping/data",
+					"protocol": "https",
+					"host": [
+						"exude-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"exude",
+						"stopping",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXUDE API file data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "application/octet-stream",
+							"type": "file",
+							"src": "/C:/dev/clients/projects/de/2.3/zips/http/metadata.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://exude-api.herokuapp.com/exude/stopping/file",
+					"protocol": "https",
+					"host": [
+						"exude-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"exude",
+						"stopping",
+						"file"
 					]
 				}
 			},
@@ -63,53 +143,17 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/exude/swear/data",
+					"raw": "https://exude-api.herokuapp.com/exude/swear/data",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"exude-api",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"exude",
 						"swear",
 						"data"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "EXUDE API file data",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "file",
-							"contentType": "application/octet-stream",
-							"type": "file",
-							"src": []
-						}
-					]
-				},
-				"url": {
-					"raw": "localhost:8080/exude/stopping/file",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"exude",
-						"stopping",
-						"file"
 					]
 				}
 			},
